@@ -38,3 +38,8 @@ http://localhost:11434/
 
 from langchain_openai import chatopenAI
 
+Openai is paid so we need to use ollama for opensource version
+
+langchain_community.chat_models import ChatOllama -- Deprecated
+
+langchain_ollama import ChatOllama (Latest)
