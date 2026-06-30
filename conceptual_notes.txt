@@ -1,0 +1,40 @@
+GenAI
+
+A part of NLP
+GPT generative pretrained transformers
+
+OpenAI
+
+Other LLMs - Gemini, llama, gemma or mistral
+
+Tools - Ollama 
+Ollama helps us run llms on our computer.
+
+Langchain - It is a framework which simplifies development of LLM powered applications. It supports classes to do the jobs to connect or call any llm. Like chatopenAI class. Langchain uses the particular api needed to communicate with the particular model. 
+Its a management layer between our application and LLMs.
+
+OpenAI setup 
+https://platform.openai.com/ 
+create the key and paste in config file. 
+
+LLMs
+Ollama https://ollama.com/download/windows install
+
+
+
+Commands to run in CMD:
+
+C:\Users\Roopal>ollama ls
+NAME    ID    SIZE    MODIFIED
+
+C:\Users\Roopal>ollama pull gemma:2b
+pulling manifest
+
+
+ollama run gemma:2b
+ollama ps 
+http://localhost:11434/
+
+
+from langchain_openai import chatopenAI
+
