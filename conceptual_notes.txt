@@ -43,3 +43,13 @@ Openai is paid so we need to use ollama for opensource version
 langchain_community.chat_models import ChatOllama -- Deprecated
 
 langchain_ollama import ChatOllama (Latest)
+
+
+
+UI framework
+streamlit
+
+Streamlit needs to be written as text_input() and response as st.write instead of print.
+Streamlit run command = streamlit run file_name
+
+langchain_core.globals import set_debug used for debugging.
