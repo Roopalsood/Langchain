@@ -20,7 +20,7 @@ create the key and paste in config file.
 LLMs
 Ollama https://ollama.com/download/windows install
 
-
+in models like gemma:2b - the 2b stands for 2 billion internal parameters in the model.
 
 Commands to run in CMD:
 
@@ -53,3 +53,14 @@ Streamlit needs to be written as text_input() and response as st.write instead o
 Streamlit run command = streamlit run file_name
 
 langchain_core.globals import set_debug used for debugging.
+
+
+Prompt Template class
+langchain_core.prompts import PromptTemplate
+
+PromptTemplate melts in rightly with Langchain so its preferred. 
+PromptTemplate is a class which uses input variables and template as its inputs. 
+It can be used in response = llm.invoke(variable.formate(varforinput=varmadeinprompttemplate, etc.))
+
+streamlist has multiple input formats like text_input, number_input, selectbox.
+
