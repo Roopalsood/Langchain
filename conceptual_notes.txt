@@ -64,3 +64,18 @@ It can be used in response = llm.invoke(variable.formate(varforinput=varmadeinpr
 
 streamlist has multiple input formats like text_input, number_input, selectbox.
 
+LCEL = Langchain chain expression language.
+
+Chains
+Langchain separation language separating prompt and LLM using |. 
+
+Types:
+1. Simple Sequential chain. The output of first chain act as the input of second chain. Chain 1 and Chain 2. 
+
+2. Sequential Chain. This has multiple inputs one can be from previous chain and next can be any external input as well. 
+
+Goes like chain = prompt_template | llm
+response = chain.invoke({input variable}) parameters are passed in dict unlike in llm.invoke
+
+output from first chain will be parsed from StroutputParser from langchain_core.output_parsers.
+
