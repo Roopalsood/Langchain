@@ -79,3 +79,9 @@ response = chain.invoke({input variable}) parameters are passed in dict unlike i
 
 output from first chain will be parsed from StroutputParser from langchain_core.output_parsers.
 
+We can use different llm models in lcel.
+lambda title: {"title":title, "emotion":emotion}  is used in final chain because second chain needs both the title and emotion to generate the output.
+
+We can also use a specific format as JsonOutputParser()
+
+Example in this line second_chain = speech_prompt | llm1 | JsonOutputParser() the JsonOutputParser is being applied to the output of the llm1 so we wont need response.content since it will be in a certain format.
